@@ -1,36 +1,78 @@
-#body{
-    font-family: "Railway", san-serif;
-}
-
-#local{
-    width: 100%;
-    background-color: #1e90ff;
-    padding: 15px 0;
+html, body, margin, padding {
     margin: 0;
-    
-    font-size: 1.5rem;
-    color: white;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
     text-align: center;
+    color: #333;
+    margin: 20px 0;
 }
 
-#cities{
-    border-collapse: collapse;
+#local {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Timesnewroman, serif;
+    color: #007BFF; 
+}
+
+#output {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-#cities td{
-    border: 1px solid #dedede;
-    padding: 8px;
+table#cities {
+    margin-top: 20px;
 }
 
-#cities tr:nth-child(even){
-    background-color: #f2f2f2;
+tr {
+    border-bottom: 1px solid #ddd;
 }
 
-.col1{
-    width: 10%;
+td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
 }
 
-.col2{
-    width: 45%;
+td img {
+    width: 30px;
+    height: auto;
+    border-radius: 3px; 
+}
+
+tr:hover {
+    background-color: #f1f1f1; 
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    #output {
+        width: 95%; 
+    }
+
+    td img {
+        width: 25px; 
+    }
 }
